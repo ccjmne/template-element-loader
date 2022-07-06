@@ -25,7 +25,13 @@
     "url": "https://github.com/ccjmne/template-tag-loader/issues"
   },
   "homepage": "https://github.com/ccjmne/template-tag-loader#readme",
+  "dependencies": {
+    "html-minifier-terser": "^7.0.0-beta.0"
+  },
   "devDependencies": {
+    "@types/html-minifier-terser": "^6.1.0",
+    "@types/node": "^18.0.3",
+    "@types/webpack": "^5.28.0",
     "vite": "^2.9.13"
   }
 }
