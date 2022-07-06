@@ -4,7 +4,7 @@
   "description": "A Webpack loader that serves your html contents into actual <template> elements",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --outdir dist"
   },
   "repository": {
     "type": "git",
