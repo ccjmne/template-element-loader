@@ -1,0 +1,28 @@
+{
+  "name": "template-element-loader",
+  "version": "1.0.0",
+  "description": "A Webpack loader that serves your html contents into actual <template> elements",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccjmne/template-element-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "html",
+    "template",
+    "element",
+    "template-element",
+    "custom-element"
+  ],
+  "author": "Eric NICOLAS <ccjmne@gmail.com> (ccjmne)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ccjmne/template-element-loader/issues"
+  },
+  "homepage": "https://github.com/ccjmne/template-element-loader#readme"
+}
