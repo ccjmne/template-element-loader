@@ -2,7 +2,17 @@
   "name": "template-tag-loader",
   "version": "1.0.0",
   "description": "A Webpack loader that serves your html contents into actual <template> elements",
-  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/template-tag-loader.umd.js",
+  "module": "dist/template-tag-loader.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/template-tag-loader.es.js",
+      "require": "./dist/template-tag-loader.umd.js"
+    }
+  },
   "scripts": {
     "build": "vite build"
   },
