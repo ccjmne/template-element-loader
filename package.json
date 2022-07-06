@@ -1,6 +1,6 @@
 {
   "name": "template-element-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Webpack loader that serves your html contents into actual <template> elements",
   "files": [
     "dist"
