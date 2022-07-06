@@ -1,16 +1,16 @@
 {
-  "name": "template-tag-loader",
+  "name": "template-element-loader",
   "version": "1.0.0",
   "description": "A Webpack loader that serves your html contents into actual <template> elements",
   "files": [
     "dist"
   ],
-  "main": "dist/template-tag-loader.umd.js",
-  "module": "dist/template-tag-loader.es.js",
+  "main": "dist/template-element-loader.umd.js",
+  "module": "dist/template-element-loader.es.js",
   "exports": {
     ".": {
-      "import": "./dist/template-tag-loader.es.js",
-      "require": "./dist/template-tag-loader.umd.js"
+      "import": "./dist/template-element-loader.es.js",
+      "require": "./dist/template-element-loader.umd.js"
     }
   },
   "scripts": {
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ccjmne/template-tag-loader.git"
+    "url": "git+https://github.com/ccjmne/template-element-loader.git"
   },
   "keywords": [
     "webpack",
@@ -32,9 +32,9 @@
   "author": "Eric NICOLAS <ccjmne@gmail.com> (ccjmne)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ccjmne/template-tag-loader/issues"
+    "url": "https://github.com/ccjmne/template-element-loader/issues"
   },
-  "homepage": "https://github.com/ccjmne/template-tag-loader#readme",
+  "homepage": "https://github.com/ccjmne/template-element-loader#readme",
   "dependencies": {
     "html-minifier-terser": "^7.0.0-beta.0"
   },

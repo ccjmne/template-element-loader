@@ -4,7 +4,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'index.ts',
-      name: 'template-tag-loader',
+      name: 'template-element-loader',
     },
   },
 });

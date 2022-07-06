@@ -16,7 +16,7 @@ Usage example:
 rules: [{
   test: /\.template\.html$/,
   use: {
-    loader: 'template-tag-loader',
+    loader: 'template-element-loader',
     options: {
       removeComments: true, // or any of the HTMLMinifier options
     },
