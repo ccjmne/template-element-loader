@@ -44,7 +44,9 @@ import template from './my-component.template.html';
 class MyElement extends HTMLElement {
 
   constructor() {
-    super()
+    super();
+
+    this
       .attachShadow({ mode: 'closed' })
       .appendChild(template.content.cloneNode(true));
   }
@@ -63,7 +65,7 @@ If your project uses [TypeScript](https://www.typescriptlang.org/), we recommend
 
 * `declarations.d.ts`:
 ```typescript
-declare module '*.html' {
+declare module '*.template.html' {
   const template: HTMLTemplateElement;
   export default template;
 }
