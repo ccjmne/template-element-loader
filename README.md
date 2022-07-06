@@ -1,18 +1,20 @@
-# &lt;template&gt; loader
-A [webpack](https://webpack.js.org/) loader that serves your html contents into actual `<template>` elements.
+# `<template>`-element-loader
+A [webpack](https://webpack.js.org/) loader that lets you consume your HTML contents as actual [`<template>` elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template).
+
+## Why?
 
 It allows preprocessing of the contents of your template to speed up subsequent rendering when needed by saving CPU cycles on HTML parsing.
 
 It's only relevant at all if you reuse that template multiple times; harmless otherwise.
 
-## Why?
+## How-to
 
 Usage example:
 
 * `webpack.config.js`:
 ```javascript
 rules: [{
-  test: /\.html$/,
+  test: /\.template\.html$/,
   use: {
     loader: 'template-tag-loader',
     options: {
@@ -22,9 +24,22 @@ rules: [{
 }]
 ```
 
-* `my-code.ts`:
+* `my-component.template.html`:
+```html
+<div>
+    <h2>Buttered Toast Recipe</h2>
+    <ol type="I">
+        <li>Choose your bread and place it in the toaster.</li>
+        <li>Choose the toaster setting and set it off.</li>
+        <li>Remove the toast.</li>
+        <li>Butter your toast.</li>
+    </ol>
+</div>
+```
+
+* `my-component.controller.ts`:
 ```typescript
-import template from './my-template.html';
+import template from './my-component.template.html';
 
 class MyElement extends HTMLElement {
 
@@ -39,8 +54,8 @@ class MyElement extends HTMLElement {
 
 ## Options
 
-Additionally minifies your HTML content using [HTMLMinifier](https://github.com/terser/html-minifier-terser).  
-Refer to their [Options Quick Reference](https://github.com/terser/html-minifier-terser#options-quick-reference) table for guidance.
+This loader additionally minifies your HTML content using [HTMLMinifier](https://github.com/terser/html-minifier-terser).  
+You can refer to their [Options Quick Reference](https://github.com/terser/html-minifier-terser#options-quick-reference) table for guidance.
 
 ## TypeScript typings
 
