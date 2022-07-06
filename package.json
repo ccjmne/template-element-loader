@@ -1,5 +1,5 @@
 {
-  "name": "template-element-loader",
+  "name": "template-tag-loader",
   "version": "1.0.0",
   "description": "A Webpack loader that serves your html contents into actual <template> elements",
   "main": "dist/index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ccjmne/template-element-loader.git"
+    "url": "git+https://github.com/ccjmne/template-tag-loader.git"
   },
   "keywords": [
     "webpack",
@@ -22,9 +22,9 @@
   "author": "Eric NICOLAS <ccjmne@gmail.com> (ccjmne)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ccjmne/template-element-loader/issues"
+    "url": "https://github.com/ccjmne/template-tag-loader/issues"
   },
-  "homepage": "https://github.com/ccjmne/template-element-loader#readme",
+  "homepage": "https://github.com/ccjmne/template-tag-loader#readme",
   "devDependencies": {
     "vite": "^2.9.13"
   }

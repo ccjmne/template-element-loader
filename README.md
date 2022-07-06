@@ -1,5 +1,5 @@
-# template-element-loader
-A Webpack loader that serves your html contents into actual `<template>` elements
+# &lt;template&gt; loader
+A [webpack](https://webpack.js.org/) loader that serves your html contents into actual `<template>` elements.
 
 ## License
 
